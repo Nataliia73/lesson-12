@@ -1,0 +1,178 @@
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Medium.woff') format('woff2'),
+		url('../fonts/Gilroy-Medium.woff2') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Regular.woff') format('woff2'),
+		url('../fonts/Gilroy-Regular.woff2') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1 {
+	font-family: Gilroy;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body {
+	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px;
+}
+.block {
+	width: auto;
+}
+.wrapper {
+	min-height: 100%;
+}
+.header-title {
+	font-size: 50px;
+	text-align: center;
+	padding: 40px;
+}
+.main-header {
+	font-size: 35px;
+	font-weight: 900;
+	text-align: center;
+}
+.car {
+	width: 420px;
+	position: relative;
+	top: 220px;
+	left: 50px;
+	z-index: 5;
+}
+.car-base {
+	background: #d11020;
+	width: 100%;
+	height: 54px;
+	border-radius: 50px 50px 10px 10px;
+}
+.car-top {
+	height: 90px;
+	width: 262px;
+	background: #d11020;
+	margin-bottom: -36px;
+	border-radius: 90px / 50px;
+	margin-left: 50px;
+	position: relative;
+}
+.head-light {
+	position: absolute;
+	background: #eeea09;
+	right: 15px;
+	top: 68px;
+	border-radius: 0 100% 0 100%;
+	width: 25px;
+	height: 20px;
+}
+.back-light {
+	position: absolute;
+	background: #eeea09;
+	left: 20px;
+	top: 68px;
+	border-radius: 50%;
+	width: 20px;
+	height: 15px;
+}
+.window {
+	position: absolute;
+	background: white;
+	width: 200px;
+	height: 32px;
+	top: 20px;
+	border-radius: 50% 50% 0 0;
+	left: 22px;
+	border: 3px solid #1a1f22;
+}
+.window::before {
+	content: '';
+	position: absolute;
+	left: 100px;
+	top: 0px;
+	background: #1a1f22;
+	height: 30px;
+	width: 10px;
+}
+.wheel {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: #202020;
+	position: absolute;
+}
+.wheel-left {
+	left: 42px;
+	bottom: -8px;
+}
+.wheel-right {
+	right: 42px;
+	bottom: -8px;
+}
+.road {
+	width: 100%;
+	height: 100px;
+	background: rgb(85, 71, 71);
+	position: relative;
+	top: 200px;
+}
+.wheel-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: rgb(238, 232, 232);
+	z-index: 3;
+	transform: translate(-50%, -50%);
+}
+
+.road-line {
+	position: relative;
+	top: 50px;
+	width: 100%;
+	height: 3px;
+	background: white;
+}
